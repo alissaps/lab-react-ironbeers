@@ -40,7 +40,8 @@ function NewBeer() {
       <Header />
 
       <form>
-        <div className="mb-3">
+        <div className="d-flex justify-content-center align-item-center">
+        <div className="mb-3 w-25">
         <label className="form-label" htmlFor="name">Name: </label>
         <input
           className="form-control"
@@ -111,9 +112,10 @@ function NewBeer() {
           name="contributed_by"
         />
 
-        <button type="submit" onClick={handleSubmit}>
+        <button className="btn btn-primary" type="submit" onClick={handleSubmit}>
           ADD NEW
         </button>
+        </div>
         </div>
       </form>
     </div>
