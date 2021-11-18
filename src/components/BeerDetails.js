@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import Header from './Header';
 
 function BeerDetails() {
     const [beerData, setBeerData] = useState({});
@@ -23,6 +24,7 @@ function BeerDetails() {
     
     return (
         <div>
+            <Header/>
             <img />
             <h1>{beerData.name}</h1>
             <p>{beerData.tagline}</p>

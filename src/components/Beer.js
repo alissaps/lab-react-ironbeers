@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import './Beer.css';
+import Header from './Header';
 
 function Beer() {
   const [beerData, setBeerData] = useState([]);
@@ -21,15 +22,7 @@ function Beer() {
 
   return (
     <div>
-      <header>
-        <Link to="/">
-          <img
-            src={
-              'https://user-images.githubusercontent.com/23629340/40707029-cb2fce12-63ef-11e8-939c-f673ff3b965d.png'
-            }
-          />
-        </Link>
-      </header>
+<Header/>
       <div >
         {beerData.map((currentBeer) => {
           return (

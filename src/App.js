@@ -7,6 +7,7 @@ import NewBeer from './components/NewBeer';
 import RandomBeer from './components/RandomBeer';
 import BeerDetails from './components/BeerDetails';
 
+
 function App() {
   return (
     <div className="App">
